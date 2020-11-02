@@ -3,6 +3,10 @@ Link to reference card for cypher:
 https://neo4j.com/docs/cypher-refcard/current/
 Cypher style guide:
 https://neo4j.com/developer/cypher/style-guide/
+Neo4j het guide:
+http://neo4j.het.io/guides/hetionet.html
+Python language reference:
+https://docs.python.org/3/reference/index.html
 """
 
 """
