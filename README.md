@@ -1,2 +1,2 @@
 # graph-and-network-by-anirudh
-Network and Graph by Anirudh
+Investigating relationships between cardiovascular (CV) pathways, drugs, & diseases and COVID-19. Organizing Drug Repurpose Knowledge Graph (DRKG) data for analysis in COVID-19 and CV interface studies. Start by downloading Neo4j desktop software and Anaconda Jupyter Notebook. Install apoc plugin and import data for database creation, copy queries from BuildGraph to create nodes. Created by Anirudh Eranki in 2020.
