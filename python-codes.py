@@ -70,9 +70,42 @@ def Sum10th(data):
     if (i % 10 == 0): sum=sum+d
   return sum
 
+#displays current date and time in console
+import datetime
+now = datetime.datetime.now()
+print ("Current date and time : ")
+print (now.strftime("%Y-%m-%d %H:%M:%S"))
 
+#outputs last name, first name for input first name and last name in console
+firstname=input("Enter your first name")
+lastname=input("Enter your last name")
+print(lastname,firstname)
 
+#generate a list and tuple with comma-separated numbers
+values = input("Input some comma seprated numbers : ")
+list = values.split(",")
+tuple = tuple(list)
+print('List : ',list)
+print('Tuple : ',tuple)
 
+#Prints the extension of a file name (e.g. abc.java, prints java)
+filename=input("Filename: ")
+filetype=filename.split(".")
+print("The file type is",filetype[-1])
 
+#Displays first and last color from provided list
+colors=input("Type in comma separated colors")
+colorterms=colors.split(",")
+print(colorterms[0],colorterms[-1])
+#alternatively:
+exam_st_date = (11,12,2014)
+print( "The examination will start from : %i / %i / %i"%exam_st_date)
+
+#Prints the sum of the square, cube, and initial number of input
+a=input("Type in a number: ")
+numone=int(a)
+numtwo=int(a)*int(a)
+numthree=int(a)*int(a)*int(a)
+print(numone+numtwo+numthree)
 
 
