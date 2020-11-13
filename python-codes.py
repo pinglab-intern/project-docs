@@ -108,4 +108,12 @@ numtwo=int(a)*int(a)
 numthree=int(a)*int(a)*int(a)
 print(numone+numtwo+numthree)
 
+#Returns the absolute value of an inputted number
+num=input("Type a number: ")
+absnum=abs(int(num))
+print(absnum)
+
+
+
+
 
