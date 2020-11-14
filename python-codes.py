@@ -113,7 +113,21 @@ num=input("Type a number: ")
 absnum=abs(int(num))
 print(absnum)
 
-
+#display current time
+import calendar
+from datetime import date
+from datetime import time
+from datetime import datetime
+def main():
+    t=datetime.time(datetime.now())
+    print(t)
+#display current date
+def main():
+    today=date.today()
+    print("Today's date is ",today)
+#display individual components of today's date--day, month, and year
+    print("Date components: ", today.day,today.month,today.year)
+#
 
 
 
