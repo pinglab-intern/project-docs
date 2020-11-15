@@ -127,7 +127,51 @@ def main():
     print("Today's date is ",today)
 #display individual components of today's date--day, month, and year
     print("Date components: ", today.day,today.month,today.year)
-#
+
+#Print calendar of a given month and year
+import calendar
+y = int(input("Input the year : "))
+m = int(input("Input the month : "))
+print(calendar.month(y, m))
+
+#Multiline string with " in middle
+print("""
+a string that you "don't" have to escape
+This
+is a  ....... multi-line
+heredoc string --------> example
+""")
+
+#finds the number of days between 2 dates
+from datetime import date
+f_date = date(2020, 6, 3)
+l_date = date(2020, 7, 11)
+delta = l_date - f_date
+print(delta.days)
+
+#volume of a sphere of area r
+import math
+def volumesphere(r):
+    volume=r**3*4/3*math.pi
+    print("The volume of this sphere of radius ",r,"is ",volume)
+
+#Computes the difference between a number and 17. If number>17, prints double the absolute difference.
+def main(a):
+    if a<=17:
+        print(17-a)
+    else:
+        print(abs(17-a)*2)
+    
+def main(a):
+    if a<=1100 and a>=1000:
+        print("Close to 1000")
+    elif a<=2100 and a>=1900:
+        print("Close to 2000")
+    else:
+        print("Not close to either 1000 or 2000")
+#Alternatively:
+def near_thousand(n):
+      return ((abs(1000 - n) <= 100) or (abs(2000 - n) <= 100))
 
 
 
