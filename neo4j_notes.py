@@ -26,3 +26,23 @@ CALL db.schema()
 #Shows the data model metagraph for Hetionet
 MATCH path=(g:Gene)--(d:Disease) RETURN path LIMIT 100
 #Shows the relationships b/w 100 genes and 2 diseases in a graph
+
+"""
+11.25.20
+"""
+#from Lesson 1 from NLP folder:
+from tensorflow.keras.preprocessing.text import Tokenizer
+#imports the tokenizer functionality
+
+sentences = [
+    'i love my dog',
+    'I, love my cat',
+    'You love my dog!'
+]
+
+tokenizer = Tokenizer(num_words = 100)
+#establishes that there are 100 words
+tokenizer.fit_on_texts(sentences)
+word_index = tokenizer.word_index
+#updates internal vocabulary based on a list of texts. Creates a word index based on the input.
+print(word_index)
